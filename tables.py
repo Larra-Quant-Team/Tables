@@ -12,3 +12,10 @@ class IndicesMaster(_MongoSeries):
     _name = 'indices_master'
     _key_ls = ['country', 'currency', 'asset', 'field']
     _drop_weekends = True 
+
+class WebInfoMaster(_MongoSeries):
+    _name = 'web_info_master'
+    _key_ls = ['country', 'asset', 'investable', 
+                'ind_sector', 'ind_group', 'ind_industry',
+                'ind_internal', 'ind_esg', 'source', 'field']
+    _drop_weekends = True
